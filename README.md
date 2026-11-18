@@ -16,15 +16,14 @@ Este proyecto aborda el análisis, diseño y simulación de un sistema de contro
 - Validar el diseño mediante simulaciones en MATLAB/Simulink y simulación de circuitos en Proteus, contrastando con pruebas físicas en osciloscopio.
 
 ## What I did
-- Designed ...
-- Programmed ...
-- Simulated ...
-- Validated ...
-
+- **Designed** el modelo matemático en espacio de estados de una planta de tercer orden a partir de las leyes de Kirchhoff, corrigiendo un diseño inicial que resultaba no controlable. Diseñé el controlador por realimentación de estados con acción integral y pre-filtro, así como los observadores de Luenberger de orden completo y reducido.
+- **Programmed** los scripts en MATLAB para el cálculo de eigenvalores (estabilidad), matrices de controlabilidad y observabilidad (criterio de Kalman), y el cálculo de ganancias mediante la fórmula de Ackermann y el método ITAE.
+- **Simulated** el sistema en lazo cerrado utilizando MATLAB y Simulink para evaluar la respuesta al escalón, el esfuerzo de control y la convergencia de los observadores. Además, simulé el comportamiento del circuito electrónico en Proteus para verificar la coherencia entre el modelo teórico y el comportamiento del hardware.
+- **Validated** el diseño analítico y simulado comprobando el Principio de Separación (independencia de los polos del controlador y del observador) y verificando que las estimaciones de estado del observador convergen a los valores reales, contrastándolo con las mediciones obtenidas del osciloscopio (cuyo montaje físico fue externo a mi labor).
 ## Results / Evidence
 - **Key result or metric:** El sistema rediseñado resultó ser estable (polos en \(-10.39\), \(-9.71\), \(-4.28\)), completamente controlable (rango = 3) y observable. Se verificó matemáticamente y en simulación que los polos del controlador y del observador son independientes (Principio de Separación), logrando un error en estado estacionario nulo ante una entrada escalón.
 - **Photos/videos:** *(Agregar capturas de pantalla de las respuestas al escalón en Simulink, diagramas de Bode, o fotos del osciloscopio del circuito físico)*.
-- **Report:** [Informe del Proyecto (PDF)](docs/report.pdf)
+- **Report:** [Informe del Proyecto (PDF)](docs/MT227_LAB04_INFORME.pdf)
 
 ## 📂 Contenido del Repositorio
 
